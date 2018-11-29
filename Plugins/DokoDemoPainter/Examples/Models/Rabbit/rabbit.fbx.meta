@@ -1,0 +1,224 @@
+fileFormatVersion: 2
+guid: 247161999271b284bb1dc1da7d8c0743
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Armature
+    100002: BackLeg_L
+    100004: BackLeg_L.001
+    100006: BackLeg_R
+    100008: BackLeg_R.001
+    100010: BackPaw_L
+    100012: BackPaw_L_end
+    100014: BackPaw_R
+    100016: BackPaw_R_end
+    100018: BackUpLeg_L
+    100020: BackUpLeg_R
+    100022: Ear_L
+    100024: Ear_L.001
+    100026: Ear_L.001_end
+    100028: Ear_R
+    100030: Ear_R.001
+    100032: Ear_R.001_end
+    100034: FrontLeg_L
+    100036: FrontLeg_R
+    100038: FrontPaw_L
+    100040: FrontPaw_L_end
+    100042: FrontPaw_R
+    100044: FrontPaw_R_end
+    100046: FrontUpLeg_L
+    100048: FrontUpLeg_R
+    100050: Fur
+    100052: Head
+    100054: Hips
+    100056: IK_BackPaw_L
+    100058: IK_BackPaw_L_end
+    100060: IK_BackPaw_R
+    100062: IK_BackPaw_R_end
+    100064: IK_BackUpLeg_L
+    100066: IK_BackUpLeg_L_end
+    100068: IK_BackUpLeg_R
+    100070: IK_BackUpLeg_R_end
+    100072: IK_Ear_L
+    100074: IK_Ear_L_end
+    100076: IK_Ear_R
+    100078: IK_Ear_R_end
+    100080: IK_FrontPaw_L
+    100082: IK_FrontPaw_L_end
+    100084: IK_FrontPaw_R
+    100086: IK_FrontPaw_R_end
+    100088: IK_FrontUpLeg_L
+    100090: IK_FrontUpLeg_L_end
+    100092: IK_FrontUpLeg_R
+    100094: IK_FrontUpLeg_R_end
+    100096: IK_Head
+    100098: IK_Head_end
+    100100: IK_Spine.001
+    100102: IK_Spine.001_end
+    100104: Main
+    100106: Neck
+    100108: Rabbit
+    100110: //RootNode
+    100112: Spine
+    100114: Spine.001
+    100116: Tail
+    100118: Tail_end
+    400000: Armature
+    400002: BackLeg_L
+    400004: BackLeg_L.001
+    400006: BackLeg_R
+    400008: BackLeg_R.001
+    400010: BackPaw_L
+    400012: BackPaw_L_end
+    400014: BackPaw_R
+    400016: BackPaw_R_end
+    400018: BackUpLeg_L
+    400020: BackUpLeg_R
+    400022: Ear_L
+    400024: Ear_L.001
+    400026: Ear_L.001_end
+    400028: Ear_R
+    400030: Ear_R.001
+    400032: Ear_R.001_end
+    400034: FrontLeg_L
+    400036: FrontLeg_R
+    400038: FrontPaw_L
+    400040: FrontPaw_L_end
+    400042: FrontPaw_R
+    400044: FrontPaw_R_end
+    400046: FrontUpLeg_L
+    400048: FrontUpLeg_R
+    400050: Fur
+    400052: Head
+    400054: Hips
+    400056: IK_BackPaw_L
+    400058: IK_BackPaw_L_end
+    400060: IK_BackPaw_R
+    400062: IK_BackPaw_R_end
+    400064: IK_BackUpLeg_L
+    400066: IK_BackUpLeg_L_end
+    400068: IK_BackUpLeg_R
+    400070: IK_BackUpLeg_R_end
+    400072: IK_Ear_L
+    400074: IK_Ear_L_end
+    400076: IK_Ear_R
+    400078: IK_Ear_R_end
+    400080: IK_FrontPaw_L
+    400082: IK_FrontPaw_L_end
+    400084: IK_FrontPaw_R
+    400086: IK_FrontPaw_R_end
+    400088: IK_FrontUpLeg_L
+    400090: IK_FrontUpLeg_L_end
+    400092: IK_FrontUpLeg_R
+    400094: IK_FrontUpLeg_R_end
+    400096: IK_Head
+    400098: IK_Head_end
+    400100: IK_Spine.001
+    400102: IK_Spine.001_end
+    400104: Main
+    400106: Neck
+    400108: Rabbit
+    400110: //RootNode
+    400112: Spine
+    400114: Spine.001
+    400116: Tail
+    400118: Tail_end
+    2100000: Fur
+    2100002: Fur.001
+    4300000: Fur
+    4300002: Rabbit
+    7400000: Armature|Basic
+    7400002: Armature|Dead
+    7400004: Armature|Dying.000
+    7400006: Armature|Dying.001
+    7400008: Armature|Guard
+    7400010: Armature|Guarding
+    7400012: Armature|Jump
+    7400014: Armature|Running
+    7400016: Armature|Sitting.000
+    7400018: Armature|Sitting.001
+    7400020: Fur|Guard
+    9500000: //RootNode
+    13700000: Fur
+    13700002: Rabbit
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
