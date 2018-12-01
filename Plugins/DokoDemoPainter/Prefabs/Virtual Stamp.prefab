@@ -82,27 +82,27 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1014807144029918}
-  m_LocalRotation: {x: 0.5, y: -0.5, z: -0.5, w: 0.5}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0.0085}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4229733000442574}
   m_Father: {fileID: 4927627082379744}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -90.00001, z: -90.00001}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4229733000442574
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1839479225187072}
-  m_LocalRotation: {x: -0.7071069, y: 0.00000013783571, z: -0.000000029802315, w: 0.70710677}
-  m_LocalPosition: {x: 0, y: -0.030350113, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.03035011}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4151573908987206}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4885142255909842
 Transform:
   m_ObjectHideFlags: 1
@@ -224,6 +224,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stampTexture: {fileID: 0}
   stampPixelSize: {x: 128, y: 128}
+  stampAngle: 0
   stampOpacity: 1
   enableTint: 0
   tintColor: {r: 0, g: 0, b: 0, a: 1}
@@ -243,6 +244,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e86ad798290d1e441ba3f09eeb10bb2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movement: 0.1
+  minimumMovement: 0.1
   stampMesh: {fileID: 23466123818607482}
   updateInterval: 5

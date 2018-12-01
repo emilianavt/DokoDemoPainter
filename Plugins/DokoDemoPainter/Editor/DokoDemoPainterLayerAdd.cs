@@ -18,40 +18,38 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using System.Collections;
+using UnityEditor;
+ 
+[InitializeOnLoad]
+public class DokoDemoPainterLayerAdd {
+	static DokoDemoPainterLayerAdd() {
+		if (LayerMask.NameToLayer("DokoDemoPainter") != -1) {
+			return;
+		}
+		CreateLayer();
+	}
+	static void CreateLayer() {
+		SerializedObject tagManager = new SerializedObject(AssetDatabase.LoadAllAssetsAtPath("ProjectSettings/TagManager.asset")[0]);
+ 
+		SerializedProperty layers = tagManager.FindProperty("layers");
+		if (layers == null || !layers.isArray)
+		{
+			Debug.LogWarning("Can't set up the layers automatically.  It's possible the format of the layers and tags data has changed in this version of Unity.");
+			Debug.LogWarning("Layers is null: " + (layers == null));
+			return;
+		}
 
-public class DDPPenController : MonoBehaviour {
-    [Header("Pen prefab settings")]
-    [Tooltip("This field is optional. If set, it has to be the default pen prefab's MeshRenderer.")]
-    public MeshRenderer penMesh = null;
-    [Tooltip("This field determines how often to update the pen's appearance. Its value is given in seconds.")]
-    public float updateInterval = 5.0f;
-    private DokoDemoPainterPen pen;
-    private float delta;
+		for (int i = 8; i < layers.arraySize; i++)
+		{
+			SerializedProperty layerSP = layers.GetArrayElementAtIndex(i);
+			if (layerSP.stringValue == "") {
+				layerSP.stringValue = "DokoDemoPainter";
+				break;
+			}
+		}
 
-    void setPenVisuals() {
-        if (penMesh != null) {
-            delta += Time.deltaTime;
-            if (delta < updateInterval) {
-                return;
-            }
-            Material[] materials = penMesh.materials;
-            materials[1].color = pen.color / 3.0f;
-            materials[2].color = pen.color;
-            penMesh.materials = materials;
-            delta = 0.0f;
-        }
-    }
-
-    void Start () {
-        pen = GetComponent<DokoDemoPainterPen>();
-        delta = updateInterval;
-        setPenVisuals();
-    }
-    
-    void Update () {
-        setPenVisuals();
-    }
+		tagManager.ApplyModifiedProperties();
+	}
 }

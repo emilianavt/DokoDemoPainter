@@ -76,9 +76,6 @@ setting may also help.
 If painting just won't work properly, the only way to fix it might be to adjust
 the UV map of the mesh itself.
 
-Another limitation is that the stamp will always paint its texture in the same
-orientation.
-
 ## WebGL
 
 If you want to export your Unity application for WebGL, make sure to set the
