@@ -162,7 +162,7 @@ MonoBehaviour:
   smoothTip: 1
   smoothTipExponent: 2
   penDown: 0
-  erasor: 0
+  eraser: 0
   keepTarget: 0
   paintInvisible: 0
   uvcam: {fileID: 565098678}
@@ -508,10 +508,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radiusFactor: 3
   penOpacityFactor: 1
-  erasorRadiusFactor: 3
-  erasorOpacityFactor: 1
+  eraserRadiusFactor: 3
+  eraserOpacityFactor: 1
   preserveAlphaPen: 0
-  stampScaleFactor: 1
+  stampScaleFactor: {x: 1, y: 1}
   preserveAlphaStamp: 1
   fadeFactor: 0
   fadeTimeSeconds: 86400
@@ -609,10 +609,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radiusFactor: 3
   penOpacityFactor: 1
-  erasorRadiusFactor: 3
-  erasorOpacityFactor: 1
+  eraserRadiusFactor: 3
+  eraserOpacityFactor: 1
   preserveAlphaPen: 0
-  stampScaleFactor: 1
+  stampScaleFactor: {x: 1, y: 1}
   preserveAlphaStamp: 1
   fadeFactor: 0
   fadeTimeSeconds: 86400
@@ -656,10 +656,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radiusFactor: 1
   penOpacityFactor: 1
-  erasorRadiusFactor: 1
-  erasorOpacityFactor: 1
+  eraserRadiusFactor: 1
+  eraserOpacityFactor: 1
   preserveAlphaPen: 0
-  stampScaleFactor: 1
+  stampScaleFactor: {x: 1, y: 1}
   preserveAlphaStamp: 1
   fadeFactor: 0
   fadeTimeSeconds: 86400
