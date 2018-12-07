@@ -86,6 +86,7 @@ public class DokoDemoPainterPaintable : MonoBehaviour {
     private bool painted = false;
     private bool fadedNow = false;
     
+    private int oldLayer = 0;
     private int previouslyPainted = 0;
     private double lastFadeTime = 0;
 
@@ -494,7 +495,7 @@ public class DokoDemoPainterPaintable : MonoBehaviour {
 
         private byte[] texToPNG(Texture tex) {
             RenderTexture prev = RenderTexture.active;
-            RenderTexture.active = RenderTexture.GetTemporary(rtCurrent.width, rtCurrent.height, 0, RenderTextureFormat.ARGB32, RenderTextureReadWrite.sRGB);
+            RenderTexture.active = RenderTexture.GetTemporary(tex.width, tex.height, 0, RenderTextureFormat.ARGB32, RenderTextureReadWrite.sRGB);
             Graphics.Blit(tex, RenderTexture.active);
             Texture2D readTex = new Texture2D(tex.width, tex.height, TextureFormat.RGBA32, false);
             readTex.ReadPixels(new Rect(0, 0, tex.width, tex.height), 0, 0);
@@ -593,7 +594,7 @@ public class DokoDemoPainterPaintable : MonoBehaviour {
     public bool setUVMode(bool mode, Plane[] planes) {
         if (uvMode && !mode) {
             uvMode = false;
-            gameObject.layer = layer;
+            gameObject.layer = oldLayer;
             for (int i = 0; i < materials.Length; i++) {
                 if (tps[i] != null) {
                     materials[i].shader = shaders[i];
@@ -606,7 +607,7 @@ public class DokoDemoPainterPaintable : MonoBehaviour {
             }
             wasUV = true;
             uvMode = true;
-            layer = gameObject.layer;
+            oldLayer = gameObject.layer;
             gameObject.layer = LayerMask.NameToLayer("DokoDemoPainter");
             for (int i = 0; i < materials.Length; i++) {
                 if (tps[i] != null) {

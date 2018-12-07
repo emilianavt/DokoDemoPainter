@@ -1,3 +1,4 @@
+DokoDemoPainter
 Copyright (c) 2018 Emiliana (twitter.com/Emiliana_vt)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
