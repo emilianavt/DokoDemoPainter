@@ -76,14 +76,18 @@ setting may also help.
 If painting just won't work properly, the only way to fix it might be to adjust
 the UV map of the mesh itself.
 
-## WebGL
+## "Painting doesn't work in a build?"
 
-If you want to export your Unity application for WebGL, make sure to set the
-player setting `Keep Loaded Shaders Alive` and add the following two shaders
-to the `Preloaded Assets` list:
+If you want to build your Unity application, you have to make sure that Unity
+includes the following two shaders in the build:
 
   * DokoDemoPainter/Detect
   * DokoDemoPainter/Render
+
+In the newest version, they have been moved to a "Resources" subfolder, which
+seems to take care of this issue. If not, try setting the player setting
+`Keep Loaded Shaders Alive` and add the two shaders to the `Preloaded Assets`
+list.
 
 These settings can be found under `Other Settings`. Doing just one of these
 things may be enough to make it work, but it can't hurt to be sure either way.
