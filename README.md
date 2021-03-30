@@ -92,6 +92,12 @@ list.
 These settings can be found under `Other Settings`. Doing just one of these
 things may be enough to make it work, but it can't hurt to be sure either way.
 
+## Mobile GPU issues
+
+Some mobile GPUs do not support render textures in `ARGBFloat` format. To
+support these, you can try modifying the scripts to use `ARGBHalf`or another
+format as indicated by `SystemInfo.SupportsRenderTextureFormat`.
+
 ## License
 
 DokoDemoPainter (code, models and textures) is distributed under the MIT
